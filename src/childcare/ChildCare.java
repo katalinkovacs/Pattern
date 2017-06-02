@@ -1,6 +1,5 @@
 package childcare;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -11,7 +10,13 @@ public class ChildCare {
 
     public ChildCare(){
 
-        children = new ArrayList<>();
+       // children = new ArrayList<>();
+    }
+
+
+    public void initializeChildren(){
+        //create a new arralist ready to add children
+        children = new java.util.ArrayList<Child>();
     }
 
 
@@ -19,9 +24,6 @@ public class ChildCare {
         return children;
     }
 
-    public void setChildren(List<Child> children) {
-        this.children = children;
-    }
 
 
 
