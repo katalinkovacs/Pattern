@@ -1,5 +1,6 @@
 package childcare;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -13,13 +14,13 @@ public class ChildCare {
     public ChildCare(){
 
         ccName = "one tree";
-       // children = new ArrayList<>();
+        // children = new ArrayList<>();
     }
 
 
     public void initializeChildren(){
-        //create a new arralist ready to add children
-       // children = new java.util.ArrayList<Child>();
+        //create a new arraylist ready to add children
+         children = new ArrayList<Child>();
     }
 
 
