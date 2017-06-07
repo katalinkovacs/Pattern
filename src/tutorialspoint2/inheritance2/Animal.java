@@ -12,6 +12,7 @@ public abstract class Animal extends Zoo{
 
     public Animal(String breed, String name){
         this.breed = breed;
+        this.name = name;
     }
 
     public String getBreed() {
