@@ -5,14 +5,10 @@ public class Visitor extends People {
 
     private int visitorNumber;
 
-    public Visitor(){
 
-    }
-
-    public Visitor(String name, int visitorNumber){
-        super(name);
+    public Visitor (String name, boolean isEmp, int visitorNumber){
+        super(name, isEmp);
         this.visitorNumber = visitorNumber;
-
     }
 
 

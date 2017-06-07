@@ -1,15 +1,13 @@
 package tutorialspoint2.inheritance2;
 
-/**
- * Created by kati on 7/06/2017.
- */
+
 public class Cat extends Animal {
 
     private String furCoat;
 
 
-    public Cat(String breed, String name, String furCoat){
-        super(breed, name);
+    public Cat(String name, String breed, String furCoat){
+        super(name, breed);
         this.furCoat=furCoat;
     }
 

@@ -3,21 +3,20 @@ package tutorialspoint2.inheritance2;
 
 public class People extends Zoo {
 
-    private String name;
+    private boolean isEmp;
 
-    public People(){
 
+    public People(String name, boolean isEmp){
+        super(name);
+        this.isEmp = isEmp;
     }
 
-    public People(String name){
-        this.name = name;
+
+    public boolean isEmp() {
+        return isEmp;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setEmp(boolean emp) {
+        isEmp = emp;
     }
 }

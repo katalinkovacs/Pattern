@@ -4,17 +4,27 @@ package tutorialspoint2.inheritance2;
 public abstract class Animal extends Zoo{
 
     private String breed;
-    private String name;
+    //private String name;
     //private String eats;
     //private int noOfLegs;
 
-    public Animal(){}
+    //public Animal(){}
 
-    public Animal(String breed, String name){
+
+    public Animal(String name, String breed){
+        super(name);
         this.breed = breed;
-        this.name = name;
+
     }
 
+
+/*
+    public Animal(String name, String breed){
+        this.breed = breed;
+
+    }
+
+*/
     public String getBreed() {
         return breed;
     }
@@ -23,13 +33,9 @@ public abstract class Animal extends Zoo{
         this.breed = breed;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+
+
 
 
     public void eating(){

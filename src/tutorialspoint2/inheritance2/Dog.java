@@ -5,12 +5,10 @@ public class Dog extends Animal{
 
     private String usedFor;
 
-    public  Dog (){
 
-    }
 
-    public  Dog (String breed, String name, String usedFor ){
-        super(breed, name);
+    public  Dog (String name, String breed, String usedFor ){
+        super(name, breed);
         this.usedFor = usedFor;
 
     }

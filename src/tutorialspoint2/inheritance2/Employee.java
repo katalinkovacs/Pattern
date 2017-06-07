@@ -5,12 +5,9 @@ public class Employee extends People{
 
     private int employeeId;
 
-    public Employee(){
 
-    }
-
-    public Employee(String name, int employeeId){
-        super(name);
+    public Employee(String name, Boolean isEmp, int employeeId){
+        super(name, isEmp);
         this.employeeId = employeeId;
 
     }
