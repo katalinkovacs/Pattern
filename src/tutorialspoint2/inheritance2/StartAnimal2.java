@@ -52,7 +52,7 @@ public class StartAnimal2 {
         for (int counter = 0; counter < animalList.size(); counter++) {
             System.out.println(animalList.get(counter));
 
-            
+
 
 
 
@@ -68,10 +68,13 @@ public class StartAnimal2 {
                 //((Cat) animal).purring();
             }
 
-            if (animal instanceof  Dog) {
+            else if (animal instanceof  Dog) {
                 System.out.println("It's a dog and his name is: " + animal.getName());
                 //((Dog) animal).barking();
 
+            }
+            else{
+                System.out.println("It's an animal");
             }
 
         }

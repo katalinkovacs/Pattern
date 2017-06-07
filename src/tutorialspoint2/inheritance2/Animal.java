@@ -1,7 +1,7 @@
 package tutorialspoint2.inheritance2;
 
 
-public abstract class Animal {
+public abstract class Animal extends Zoo{
 
     private String breed;
     private String name;
