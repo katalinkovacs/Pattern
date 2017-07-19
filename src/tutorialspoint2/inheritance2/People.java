@@ -1,7 +1,7 @@
 package tutorialspoint2.inheritance2;
 
 
-public class People extends Zoo {
+public abstract class People extends Zoo {
 
     private boolean isEmp;
 
@@ -18,5 +18,9 @@ public class People extends Zoo {
 
     public void setEmp(boolean emp) {
         isEmp = emp;
+    }
+
+    public void simplePerson(){
+        System.out.println("just a person");
     }
 }

@@ -46,10 +46,10 @@ public class Animal {
     }
 
     public void eating(){
-        System.out.println("Animal is eating");
+        System.out.println("AnimalIF is eating");
     }
 
     public String drinking(){
-        return "Animal is drinking";
+        return "AnimalIF is drinking";
     }
 }

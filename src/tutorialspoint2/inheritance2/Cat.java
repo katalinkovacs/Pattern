@@ -20,18 +20,22 @@ public class Cat extends Animal {
         this.furCoat = furCoat;
     }
 
-    @Override
-    public void eating(){
+
+    // MUST IMPLEMENT EAT DRINK AND TALK METHODS
+
+    public void eat(){
         System.out.println("Cat is eating");
     }
 
-    @Override
-    public String drinking(){
+    public String drink(){
         return ("Cat is drinking");
     }
 
-    public void purring(){
-        System.out.println("purring purring");
+    // MUST IMPLEMENT ABSTRACT METHOD TALK
+
+    @Override
+    public void talk(){
+        System.out.println("Miau miau");
     }
 
 

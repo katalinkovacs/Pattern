@@ -19,4 +19,8 @@ public class Visitor extends People {
     public void setVisitorNumber(int visitorNumber) {
         this.visitorNumber = visitorNumber;
     }
+
+    public void visiting(){
+        System.out.println("visiting");
+    }
 }

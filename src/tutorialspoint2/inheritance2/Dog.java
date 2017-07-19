@@ -21,17 +21,20 @@ public class Dog extends Animal{
         this.usedFor = usedFor;
     }
 
-    @Override
-    public void eating(){
+
+    // MUST IMPLEMENT EAT DRINK AND TALK METHODS
+
+    public void eat(){
         System.out.println("Dog is eating");
     }
 
-    @Override
-    public String drinking(){
+    public String drink(){
         return ("Dog is drinking");
     }
 
-    public void barking(){
+    // MUST IMPLEMENT ABSTRACT METHOD TALK
+    @Override
+    public void talk(){
         System.out.println("Vau vau");
     }
 }

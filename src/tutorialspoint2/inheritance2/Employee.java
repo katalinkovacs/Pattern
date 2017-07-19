@@ -19,4 +19,8 @@ public class Employee extends People{
     public void setEmployeeId(int employeeId) {
         this.employeeId = employeeId;
     }
+
+    public void working(){
+        System.out.println("working");
+    }
 }
