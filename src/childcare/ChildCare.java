@@ -9,8 +9,10 @@ import java.util.Map;
 public class ChildCare {
 
     private List<Child> children;
+
     private String ccName;
-    private HashMap<Child, ChildCare> childrenMap;
+
+    //private HashMap<Child, ChildCare> childrenMap;
 
 
  /*
@@ -27,6 +29,13 @@ public class ChildCare {
     public void initializeChildren(){
          children = new ArrayList<Child>();
     }
+
+
+    /*
+    public void initializeChildrenMap(){
+        childrenMap = new HashMap<Child,ChildCare>();
+    }
+*/
 
 
     // GETTERS AND SETTERS
@@ -48,8 +57,14 @@ public class ChildCare {
     }
 
 
+    /*
+    public HashMap<Child, ChildCare> getChildrenMap() {
+        return childrenMap;
+    }
 
+    public void setChildrenMap(HashMap<Child, ChildCare> childrenMap) {
+        this.childrenMap = childrenMap;
+    }
 
-
-
+    */
 }
