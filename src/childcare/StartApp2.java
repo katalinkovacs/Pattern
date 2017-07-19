@@ -7,6 +7,8 @@ public class StartApp2 {
 
     public static void main(String[] args) {
 
+        System.out.println("MAIN STARTED.................");
+
 
         ChildCare cc = new ChildCare();
 
@@ -14,44 +16,59 @@ public class StartApp2 {
         System.out.println(cc.getCcName());
 
         cc.initializeChildren();
-        cc.getChildren().add(new Child("Sebastian Kovacs", 33, "Toddler"));
-        cc.getChildren().add(new Child("Rory Smith", 30, "Toddler"));
-        cc.getChildren().add(new Child("Kylie Key", 29, "Toddler"));
-        cc.getChildren().add(new Child("Nina Phan", 16, "Baby"));
-        cc.getChildren().add(new Child("Reka Kallay", 10, "Baby"));
-        cc.getChildren().add(new Child("Kornel Nagy", 40, "Kinder"));
-        cc.getChildren().add(new Child("Bulcsu Kantor", 42, "Kinder"));
+        cc.getChildren().add(new Child("Sebastian", "Kovacs", 33, "Toddler"));
+        cc.getChildren().add(new Child("Rory", "Smith", 30, "Toddler"));
+        cc.getChildren().add(new Child("Kylie", "Key", 29, "Toddler"));
+        cc.getChildren().add(new Child("Nina", "Phan", 16, "Baby"));
+        cc.getChildren().add(new Child("Reka", "Kallay", 10, "Baby"));
+        cc.getChildren().add(new Child("Kornel", "Nagy", 40, "Kinder"));
+        cc.getChildren().add(new Child("Bulcsu", "Kantor", 42, "Kinder"));
 
 
-        //Scanner scanner = new Scanner(System.in);
-        //System.out.print("What is your child's name? ");
-        //String name = scanner.next();
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What is your child's Firstname? ");
+        String fname = scanner.next();
+        System.out.print("What is your child's Lastname? ");
+        String lname = scanner.next();
+
+/*
+        if(fname.equals("Sebastian")){
+            System.out.println("Hello Sebi!");
+        }
+
+        if(lname.equals("Kovacs")){
+            System.out.println("Hello Kovi!");
+        }
+
+*/
 
         for (Child c : cc.getChildren()) {
 
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("What is your child's name? ");
-            String name = scanner.next();
+            //System.out.println("In the for loop.........................");
 
-            if(name == "Sebastian Kovacs"){
-                System.out.println("Hello Sebi!");
+            //System.out.print("Your child's firstname is: " +fname +" Your child's lastname is: " +lname);
+            //System.out.print("Your child's lastname is: " +lname);
+            //System.out.println();
+            //System.out.println();
+
+/*
+            if( (fname.equals("Sebastian")) && (lname.equals("Kovacs"))){
+                System.out.println("Hello Sebastian Kovacs!");
             }
+*/
 
+            if( (fname.equals(c.getFirstName())) && (lname.equals(c.getLastName()))){
+                System.out.println("Your child's name is: " + c.getFirstName() +" " + c.getLastName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
+            }
+/*
             if (name == c.getName()) {
                 //System.out.println("Your child's name is: " + name);
                 //System.out.println(c);
                 System.out.println("Your child's name is: " + c.getName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
             }
+
+ */
         }
-
-
-/*
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("What is your child's name? ");
-        String name = scanner.next();
-        System.out.println("Your child's name is: " + name);
-*/
-
 
 
         System.out.println("MAIN ENDED.................");

@@ -3,7 +3,8 @@ package childcare;
 
 public class Child {
 
-    private String name;
+    private String firstName;
+    private String lastName;
     private int ageInMonth;
     private String room;
 
@@ -11,21 +12,31 @@ public class Child {
 
     }
 
-    public Child(String name, int ageInMonth, String room){
-       this.name = name;
+    public Child(String firstName, String lastName, int ageInMonth, String room){
+       //System.out.println("In CONSTRUCTOR with ARGS");
+       this.firstName = firstName;
+       this.lastName = lastName;
        this.ageInMonth = ageInMonth;
-        this.room = room;
+       this.room = room;
     }
 
 
     // GETTERS AND SETTERS
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public int getAgeInMonth() {
