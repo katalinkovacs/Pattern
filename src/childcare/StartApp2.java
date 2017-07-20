@@ -24,12 +24,15 @@ public class StartApp2 {
         cc.getChildren().add(new Child("Kornel", "Nagy", 40, "Kinder"));
         cc.getChildren().add(new Child("Bulcsu", "Kantor", 42, "Kinder"));
 
-
+/*
         Scanner scanner = new Scanner(System.in);
         System.out.print("What is your child's Firstname? ");
         String fname = scanner.next();
         System.out.print("What is your child's Lastname? ");
         String lname = scanner.next();
+
+*/
+
 
 /*
         if(fname.equals("Sebastian")){
@@ -42,6 +45,13 @@ public class StartApp2 {
 
 */
 
+        //System.out.println("findYourChildByName METHOD WILL BE CALLED");
+        cc.findYourChildByName();
+        System.out.println();
+        cc.listChildren();
+
+/*
+
         for (Child c : cc.getChildren()) {
 
             //System.out.println("In the for loop.........................");
@@ -49,27 +59,21 @@ public class StartApp2 {
             //System.out.print("Your child's firstname is: " +fname +" Your child's lastname is: " +lname);
             //System.out.print("Your child's lastname is: " +lname);
             //System.out.println();
-            //System.out.println();
 
-/*
-            if( (fname.equals("Sebastian")) && (lname.equals("Kovacs"))){
-                System.out.println("Hello Sebastian Kovacs!");
-            }
-*/
 
             if( (fname.equals(c.getFirstName())) && (lname.equals(c.getLastName()))){
                 System.out.println("Your child's name is: " + c.getFirstName() +" " + c.getLastName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
             }
-/*
+
             if (name == c.getName()) {
                 //System.out.println("Your child's name is: " + name);
                 //System.out.println(c);
                 System.out.println("Your child's name is: " + c.getName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
             }
 
- */
-        }
 
+        }
+*/
 
         System.out.println("MAIN ENDED.................");
     }

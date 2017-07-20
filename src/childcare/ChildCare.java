@@ -1,9 +1,6 @@
 package childcare;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 
 public class ChildCare {
@@ -25,12 +22,6 @@ public class ChildCare {
     }
 
  */
-
-    //create a new arraylist ready to add children
-    public void initializeChildren(){
-         children = new ArrayList<Child>();
-    }
-
 
     /*
     public void initializeChildrenMap(){
@@ -69,16 +60,41 @@ public class ChildCare {
 
     */
 
-    public void findYourChildByName(String fname, String lname){
+    // METHODS
 
-        for (Child c : cc.getChildren()) {
+    //create a new arraylist ready to add children
+    public void initializeChildren(){
 
+        children = new ArrayList<Child>();
+    }
+
+    public void findYourChildByName(){
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("What is your child's Firstname? ");
+        String fname = scanner.next();
+        System.out.print("What is your child's Lastname? ");
+        String lname = scanner.next();
+
+        for (Child c : getChildren()) {
 
             if( (fname.equals(c.getFirstName())) && (lname.equals(c.getLastName()))){
                 System.out.println("Your child's name is: " + c.getFirstName() +" " + c.getLastName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
             }
-
         }
    }
+
+   public void listChildren(){
+
+       System.out.println("Listing children at "+getCcName());
+       for (Child c : getChildren()) {
+           //System.out.println(c);
+           System.out.println("FirstName is: " + c.getFirstName() +". LastName is: " + c.getLastName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
+
+       }
+   }
+
+
+
 
 }
