@@ -94,6 +94,17 @@ public class ChildCare {
        }
    }
 
+    public void listBabies(){
+
+        System.out.println("Children in the Baby's room at " +getCcName() +" are: ");
+        for (Child c : getChildren()) {
+
+            if( (c.getRoom() == "Baby")){
+                System.out.println(c.getFirstName() + " " +c.getLastName());
+            }
+        }
+    }
+
 
 
 
