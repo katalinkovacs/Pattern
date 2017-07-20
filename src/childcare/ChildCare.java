@@ -12,6 +12,7 @@ public class ChildCare {
 
     private String ccName;
 
+
     //private HashMap<Child, ChildCare> childrenMap;
 
 
@@ -67,4 +68,17 @@ public class ChildCare {
     }
 
     */
+
+    public void findYourChildByName(String fname, String lname){
+
+        for (Child c : cc.getChildren()) {
+
+
+            if( (fname.equals(c.getFirstName())) && (lname.equals(c.getLastName()))){
+                System.out.println("Your child's name is: " + c.getFirstName() +" " + c.getLastName() + ". Age is: " + c.getAgeInMonth() + " months. Room is: " + c.getRoom());
+            }
+
+        }
+   }
+
 }
