@@ -47,9 +47,9 @@ public class StartApp2 {
 */
 
         //System.out.println("findYourChildByName METHOD WILL BE CALLED");
-        //cc.findYourChildByName();
-        //System.out.println();
-        //cc.listChildren();
+        cc.findYourChildByName();
+        System.out.println();
+        cc.listChildren();
         cc.listBabies();
 
 /*
@@ -76,63 +76,6 @@ public class StartApp2 {
 
         }
 */
-
-
-        System.out.println("-----------------------------------------------------------");
-
-        ArrayList<String> babies = new ArrayList<String>();
-
-        for (Child c : cc.getChildren()) {
-
-            if( (c.getRoom() == "Baby")){
-                System.out.println(c.getFirstName() + " " +c.getLastName());
-                babies.add(c.getFirstName() +" " +c.getLastName());
-            }
-        }
-
-
-
-        System.out.println("Size of babies array is: " + babies.size() );
-
-
-        // Access and print out the Objects
-        for ( int i = 0; i < babies.size(); i++ ){
-            System.out.println("Element " +i + ": " + babies.get(i) );
-    }
-
-
-
-        ChildCare cc2 = new ChildCare();
-        cc2.setCcName("One Tree Altona");
-        System.out.println(cc2.getCcName());
-
-        cc2.initializeChildren();
-        cc2.getChildren().add(new Child("Maria", "Gerber", 33, "Toddler"));
-        cc2.getChildren().add(new Child("Andrea", "Kerekes", 30, "Toddler"));
-        cc2.getChildren().add(new Child("Ilona", "Nagy", 29, "Toddler"));
-        cc2.getChildren().add(new Child("Istvan", "Kovacs", 16, "Baby"));
-        cc2.getChildren().add(new Child("Csanad", "Kallay", 10, "Baby"));
-        cc2.getChildren().add(new Child("Krisztina", "Kovacs", 40, "Kinder"));
-        cc2.getChildren().add(new Child("Rita", "Hatala", 42, "Kinder"));
-
-
-        for (Child c : cc2.getChildren()) {
-
-            if( (c.getRoom() == "Baby")){
-                System.out.println(c.getFirstName() + " " +c.getLastName());
-                babies.add(c.getFirstName() +" " +c.getLastName());
-            }
-        }
-
-
-
-        System.out.println("Size of babies array is: " + babies.size() );
-
-
-        // Access and print out the Objects
-        for ( int i = 0; i < babies.size(); i++ ){
-            System.out.println("Element " +i + ": " + babies.get(i) );
-        }
 
 
 
