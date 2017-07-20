@@ -25,16 +25,25 @@ public class StartApp4 {
 
 
         Map<String, String> mapBabies = new HashMap<String, String>();
+        Map<String, String> mapToddlers = new HashMap<String, String>();
+        Map<String, String> mapKinders = new HashMap<String, String>();
 
         for (Child c : cc.getChildren()) {
 
             if( (c.getRoom() == "Baby")){
-                //System.out.println(c.getFirstName() + " " +c.getLastName());
                 mapBabies.put(c.getFirstName() +" " +c.getLastName(), cc.getCcName());
+            }else if( (c.getRoom() == "Toddler")){
+                mapToddlers.put(c.getFirstName() +" " +c.getLastName(), cc.getCcName());
+            }else if( (c.getRoom() == "Kinder")){
+                mapKinders.put(c.getFirstName() +" " +c.getLastName(), cc.getCcName());
+            }else{
+                System.out.println("Exception Handling-----------------");
             }
         }
 
         System.out.println("Babies are: " + mapBabies);
+        System.out.println("Toddlers are: " + mapToddlers);
+        System.out.println("Kinders are: " + mapKinders);
 
 /*
         // Display content using Iterator
@@ -62,26 +71,57 @@ public class StartApp4 {
         cc2.getChildren().add(new Child("Rita", "Hatala", 42, "Kinder"));
 
 
-
         for (Child c : cc2.getChildren()) {
 
             if( (c.getRoom() == "Baby")){
-
                 mapBabies.put(c.getFirstName() +" " +c.getLastName(), cc2.getCcName());
+            }else if( (c.getRoom() == "Toddler")){
+                mapToddlers.put(c.getFirstName() +" " +c.getLastName(), cc2.getCcName());
+            }else if( (c.getRoom() == "Kinder")){
+                mapKinders.put(c.getFirstName() +" " +c.getLastName(), cc2.getCcName());
+            }else{
+                System.out.println("Exception Handling-----------------");
             }
         }
 
         System.out.println("Babies are: " + mapBabies);
+        System.out.println("Toddlers are: " + mapToddlers);
+        System.out.println("Kinders are: " + mapKinders);
+
+        System.out.println("----------------------------------------");
 
 
+        System.out.println("Baby room: ");
         // Display content using Iterator
         Set set = mapBabies.entrySet();
         Iterator iterator = set.iterator();
         while(iterator.hasNext()) {
             Map.Entry mentry = (Map.Entry)iterator.next();
-            System.out.println("Key is: " + mentry.getKey() + ". Value is: " +mentry.getValue());
+            System.out.println(mentry.getKey() +" at "+mentry.getValue());
         }
 
+        System.out.println();
+
+        System.out.println("Toddler room: ");
+        // Display content using Iterator
+        Set set2 = mapToddlers.entrySet();
+        Iterator iterator2 = set2.iterator();
+        while(iterator2.hasNext()) {
+            Map.Entry mentry2 = (Map.Entry)iterator2.next();
+            System.out.println(mentry2.getKey() +" at "+mentry2.getValue());
+        }
+
+
+        System.out.println();
+
+        System.out.println("Kinder room: ");
+        // Display content using Iterator
+        Set set3 = mapKinders.entrySet();
+        Iterator iterator3 = set3.iterator();
+        while(iterator3.hasNext()) {
+            Map.Entry mentry3 = (Map.Entry)iterator3.next();
+            System.out.println(mentry3.getKey() +" at "+mentry3.getValue());
+        }
 
 
 
