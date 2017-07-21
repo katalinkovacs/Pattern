@@ -65,7 +65,11 @@ public class ChildCare2 {
     //create a new arraylist ready to add children
     public void initializeChildren(){
 
-        children = new ArrayList<Child2>();
+
+        babyRoomList = new ArrayList<>();
+        toddlerRoomList = new ArrayList<>();
+        kinderRoomList = new ArrayList<>();
+
     }
 
     public void findYourChildByName(){
@@ -95,5 +99,19 @@ public class ChildCare2 {
     }
 
 
+    public void enrollChild(Child2 child){
+        if (child.getAgeInMonth() < 24){
+            babyRoomList.add(child);
+            System.out.println("kiddo added to babyroom ");
+        }else if(child.getAgeInMonth() > 24 && child.getAgeInMonth() < 36){
+            toddlerRoomList.add(child);
+            System.out.println("kiddo added to toddler ");
+        }else if(child.getAgeInMonth() > 36){
+            kinderRoomList.add(child);
+            System.out.println("kiddo added to kinder ");
+        }else{
+            System.out.println("your bastard child is too old, piss off");
+        }
+    }
 
 }
