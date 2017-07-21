@@ -10,26 +10,6 @@ public class ChildCare {
     private String ccName;
 
 
-    //private HashMap<Child, ChildCare> childrenMap;
-
-
- /*
-
-    public ChildCare(){
-
-        ccName = "one tree";
-        // children = new ArrayList<>();
-    }
-
- */
-
-    /*
-    public void initializeChildrenMap(){
-        childrenMap = new HashMap<Child,ChildCare>();
-    }
-*/
-
-
     // GETTERS AND SETTERS
 
     public void setCcName(String ccName) {
@@ -48,17 +28,6 @@ public class ChildCare {
         this.children = children;
     }
 
-
-    /*
-    public HashMap<Child, ChildCare> getChildrenMap() {
-        return childrenMap;
-    }
-
-    public void setChildrenMap(HashMap<Child, ChildCare> childrenMap) {
-        this.childrenMap = childrenMap;
-    }
-
-    */
 
     // METHODS
 
@@ -93,18 +62,6 @@ public class ChildCare {
 
        }
    }
-
-    public void listBabies(){
-
-        System.out.println("Children in the Baby's room at " +getCcName() +" are: ");
-        for (Child c : getChildren()) {
-
-            if( (c.getRoom() == "Baby")){
-                System.out.println(c.getFirstName() + " " +c.getLastName());
-            }
-        }
-    }
-
 
 
 
